@@ -1,0 +1,91 @@
+.users-page {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px; 
+  margin: auto; 
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; 
+  margin: auto; 
+}
+
+.user-card {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ddd;
+}
+.user-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.user-card .user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.user-card .edit-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  border: none;
+}
+
+.user-card .edit-button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 600px) {
+  .users-list {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (min-width: 900px) {
+  .users-list {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (min-width: 1200px) {
+  .users-list {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .users-list {
+    grid-template-columns: 1fr; 
+  }
+}
